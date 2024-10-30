@@ -2,9 +2,6 @@
 
 [![codecov](https://codecov.io/gh/wtchnm/Vitamin/branch/main/graph/badge.svg?token=H9BBAKGYI0)](https://codecov.io/gh/wtchnm/Vitamin) ![Test workflow](https://github.com/wtchnm/Vitamin/actions/workflows/test.yml/badge.svg) ![CodeQL workflow](https://github.com/wtchnm/Vitamin/actions/workflows/codeql-analysis.yml/badge.svg) [![Vitamin](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/etow1b&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/etow1b/runs) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/wtchnm/Vitamin/blob/main/LICENSE)
 
-> [!WARNING]
-> Project in maintenance mode.
-
 Opinionated Vite starter template.
 
 ## Features
@@ -29,29 +26,18 @@ npx degit wtchnm/Vitamin#main my-app
 Then, install the dependencies:
 
 ```
-pnpm install
+yarn install
 ```
-
-### Before you start coding
-
-- [ ] If you don't plan to use GitHub Actions, delete the `.github` directory.
-- [ ] Clean up the `cypress/e2e/index.spec.ts` file.
-- [ ] Change the `favicon.png`, `apple-touch-icon.png`, `android-chrome-192x192.png` and `android-chrome-512x512.png`. [favicon.io](https://favicon.io) is a cool tool for generating these assets.
-- [ ] In the `src` folder, remove the `__tests__`, `api` and `components` folder and the `types.ts` file.
-- [ ] If you don't plan to use `react-query`, remove the query client logic in the `main.tsx` file.
-- [ ] Change the title, description and theme color in the `index.html` and `vite.config.ts`. The [Inter](https://rsms.me/inter/) font is included, so remove it if you want.
-- [ ] Modify or delete the `LICENSE` file.
-- [ ] Change the `name` field in package.json.
 
 ## Scripts
 
-- `pnpm dev` - start a development server with hot reload.
-- `pnpm build` - build for production. The generated files will be on the `dist` folder.
-- `pnpm preview` - locally preview the production build.
-- `pnpm test` - run unit and integration tests related to changed files based on git.
-- `pnpm test:ci` - run all unit and integration tests in CI mode.
-- `pnpm test:e2e` - run all e2e tests with the Cypress Test Runner.
-- `pnpm test:e2e:headless` - run all e2e tests headlessly.
-- `pnpm format` - format all files with Prettier.
-- `pnpm lint` - runs TypeScript, ESLint and Stylelint.
-- `pnpm validate` - runs `lint`, `test:ci` and `test:e2e:ci`.
+- `yarn dev` - start a development server with hot reload.
+- `yarn build` - build for production. The generated files will be on the `dist` folder.
+- `yarn preview` - locally preview the production build.
+- `yarn test` - run unit and integration tests related to changed files based on git.
+- `yarn test:ci` - run all unit and integration tests in CI mode.
+- `yarn test:e2e` - run all e2e tests with the Cypress Test Runner.
+- `yarn test:e2e:headless` - run all e2e tests headlessly.
+- `yarn format` - format all files with Prettier.
+- `yarn lint` - runs TypeScript, ESLint and Stylelint.
+- `yarn validate` - runs `lint`, `test:ci` and `test:e2e:ci`.
