@@ -9,7 +9,6 @@ const config = {
 			sans: ['Inter', ...defaultConfig.theme.fontFamily.sans]
 		}
 	},
-	experimental: { optimizeUniversalDefaults: true },
 	plugins: [formsPlugin]
 }
 module.exports = config
