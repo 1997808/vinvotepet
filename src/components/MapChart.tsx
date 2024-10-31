@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-magic-numbers */
-import { population } from "components/constant";
+import { population2 } from "components/constant";
 import HighchartsReact from "highcharts-react-official";
 import Highcharts from "highcharts/highmaps";
 import { useEffect, useState } from "react";
@@ -48,8 +48,17 @@ function MapChart(): JSX.Element {
         {
           joinBy: ["iso_3166_2", "iso"],
           name: "Vote",
+          dataLabels: {
+            enabled: true,
+            color: '#FFFFFF',
+            format: '{point.code}',
+            style: {
+              fontSize: '7px',
+              textTransform: 'uppercase'
+            }
+          },
           mapData: mapVN,
-          data: population,
+          data: population2,
         },
       ],
     });
