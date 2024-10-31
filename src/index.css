@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.vote-c3 {
+	background-color: #244999;
+}
+
+.vote-c2 {
+	background-color: #577ccc;
+}
+
+.vote-c1 {
+	background-color: #8aafff;
+}
+
+.vote-t {
+	background-color: #c9c09b;
+}
+
+.vote-d1 {
+	background-color: #ff8b98;
+}
+
+.vote-d2 {
+	background-color: #ff5865;
+}
+
+.vote-d3 {
+	background-color: #d22532;
+}

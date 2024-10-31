@@ -1,9 +1,9 @@
 import LoadingOrError from 'components/LoadingOrError'
 import type { ReactElement } from 'react'
-import { Suspense } from 'react'
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-// const Gallery = lazy(async () => import('pages/Gallery'))
+const Result = lazy(async () => import('pages/Result'))
 // const Details = lazy(async () => import('pages/Details'))
 
 export default function App(): ReactElement {
@@ -11,7 +11,7 @@ export default function App(): ReactElement {
 		<BrowserRouter>
 			<Suspense fallback={<LoadingOrError />}>
 				<Routes>
-					<Route path='/' element={<div>Test</div>} />
+					<Route path='/' element={<Result />} />
 				</Routes>
 			</Suspense>
 		</BrowserRouter>
